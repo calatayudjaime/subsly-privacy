@@ -7,9 +7,363 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Use - Subsly</title>
-    <!-- Same styles as Spanish version -->
     <style>
-        /* Copy all styles from Spanish version */
+        /* Same styles as Spanish version */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF3366, #FF6B9D, #00D4FF, #00F5A0, #D946EF);
+            background-size: 200% 200%;
+            animation: gradientShift 10s ease infinite;
+            padding: 80px 20px 40px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .logo-text {
+            font-size: 48px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.95);
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+        }
+        
+        .metadata-card {
+            background: linear-gradient(135deg, #f8f9ff, #fff5f8);
+            border: 2px solid rgba(255,51,102,0.1);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .metadata-card strong {
+            color: #FF3366;
+        }
+        
+        .key-summary {
+            background: linear-gradient(135deg, #FF3366, #D946EF);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(255,51,102,0.2);
+        }
+        
+        .key-summary::before {
+            content: "📱";
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 60px;
+            opacity: 0.3;
+        }
+        
+        .key-summary h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .key-summary p {
+            color: rgba(255,255,255,0.95);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin: 40px 0 30px;
+            background: linear-gradient(90deg, #FF3366, #00F5A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            color: #1a1a1a;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #FF3366, #00F5A0);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 25px 0 15px;
+            color: #00B4D8;
+        }
+        
+        p {
+            margin-bottom: 18px;
+            color: #4a4a4a;
+            font-size: 16px;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        ul li {
+            margin: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            color: #4a4a4a;
+            font-size: 16px;
+        }
+        
+        ul li::before {
+            content: "→";
+            position: absolute;
+            left: 10px;
+            color: #00F5A0;
+            font-weight: bold;
+        }
+        
+        ul li strong {
+            color: #FF3366;
+        }
+        
+        .highlight-box {
+            background: #f8f9ff;
+            border-left: 4px solid #00F5A0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-box strong {
+            color: #FF3366;
+            font-size: 18px;
+        }
+        
+        .pricing-card {
+            background: linear-gradient(135deg, rgba(255,51,102,0.1), rgba(217,70,239,0.1));
+            border: 2px solid rgba(255,51,102,0.2);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .pricing-card h3 {
+            color: #FF3366;
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .pricing-card .price {
+            font-size: 36px;
+            font-weight: 800;
+            text-align: center;
+            background: linear-gradient(90deg, #FF3366, #D946EF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 20px 0;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, rgba(217,70,239,0.1), rgba(0,212,255,0.1));
+            border: 2px solid rgba(217,70,239,0.2);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .contact-card h3 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .contact-card p {
+            color: #4a4a4a;
+            margin: 10px 0;
+        }
+        
+        .contact-card a {
+            color: #FF3366;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card a:hover {
+            color: #D946EF;
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #f8f9ff, #fff5f8);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 60px 0 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .footer-logo {
+            font-size: 32px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #FF3366, #00F5A0, #D946EF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+        
+        .footer-tagline {
+            font-size: 18px;
+            color: #6a6a6a;
+            margin-bottom: 10px;
+        }
+        
+        .footer-copyright {
+            font-size: 14px;
+            color: #9a9a9a;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 5px;
+        }
+        
+        .badge-pink {
+            background: rgba(255,51,102,0.1);
+            color: #FF3366;
+            border: 1px solid #FF3366;
+        }
+        
+        .badge-green {
+            background: rgba(0,245,160,0.1);
+            color: #00C896;
+            border: 1px solid #00F5A0;
+        }
+        
+        .badge-blue {
+            background: rgba(0,212,255,0.1);
+            color: #00B4D8;
+            border: 1px solid #00D4FF;
+        }
+        
+        .emoji-large {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255,193,7,0.1), rgba(255,152,0,0.1));
+            border: 2px solid rgba(255,193,7,0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .warning-box strong {
+            color: #FF6F00;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-text {
+                font-size: 36px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #FF3366, #00F5A0, transparent);
+            margin: 40px 0;
+            border-radius: 2px;
+        }
     </style>
 </head>
 <body>
@@ -42,8 +396,198 @@
         
         <p>These terms constitute a legal agreement between you ("User") and Jaime Calatayud ("Developer", "we") regarding the use of Subsly.</p>
         
-        <!-- Continue with all sections translated to English -->
-        <!-- ... Rest of content in English ... -->
+        <div class="divider"></div>
+        
+        <h2>2. Service Description</h2>
+        <p>Subsly is a subscription management application that allows you to:</p>
+        <ul>
+            <li>Organize and track your subscriptions</li>
+            <li>Receive notifications before renewals</li>
+            <li>Analyze your subscription spending</li>
+            <li>Store private notes securely</li>
+            <li>Get savings recommendations</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <p><strong>Important:</strong> Subsly works completely offline. All your data is stored locally on your device and is never transmitted to external servers.</p>
+        </div>
+        
+        <h2>3. Premium Subscription</h2>
+        
+        <div class="pricing-card">
+            <h3>Subsly Premium</h3>
+            <div class="price">€0.99/month</div>
+            <p style="text-align: center; color: #00C896; font-weight: 600;">✓ 14-day free trial</p>
+        </div>
+        
+        <h3>3.1 Price and Terms</h3>
+        <ul>
+            <li><strong>Price:</strong> €0.99 per month</li>
+            <li><strong>Free trial:</strong> 14 days at no charge</li>
+            <li><strong>Renewal:</strong> Automatic monthly</li>
+            <li><strong>Billing:</strong> Through your iTunes account</li>
+        </ul>
+        
+        <h3>3.2 Billing Process</h3>
+        <ul>
+            <li>Payment will be charged to your iTunes account at confirmation of purchase</li>
+            <li>Subscription automatically renews every month</li>
+            <li>Renewal will be charged within 24 hours before the end of the current period</li>
+            <li>Renewal price will be €0.99/month</li>
+            <li>Any unused free trial period will be forfeited when purchasing a subscription</li>
+        </ul>
+        
+        <h3>3.3 Cancellation</h3>
+        <div class="warning-box">
+            <p><strong>⚠️ How to cancel your subscription:</strong></p>
+            <ol style="padding-left: 20px;">
+                <li>Go to Settings on your iPhone/iPad</li>
+                <li>Tap your name (Apple ID)</li>
+                <li>Select "Subscriptions"</li>
+                <li>Find "Subsly Premium"</li>
+                <li>Tap "Cancel Subscription"</li>
+            </ol>
+            <p style="margin-top: 15px;"><strong>Note:</strong> You must cancel at least 24 hours before the end of the current period to avoid the next charge.</p>
+        </div>
+        
+        <h3>3.4 Subscription Management</h3>
+        <ul>
+            <li>You can manage your subscription from iOS Settings</li>
+            <li>No refunds for unused periods</li>
+            <li>Cancellation will be effective at the end of the current billing period</li>
+            <li>After canceling, you'll retain Premium access until the end of the paid period</li>
+        </ul>
+        
+        <div class="divider"></div>
+        
+        <h2>4. License to Use</h2>
+        <p>We grant you a personal, non-exclusive, non-transferable, and revocable license to use Subsly on your personal iOS devices, subject to these terms.</p>
+        
+        <h3>4.1 You May:</h3>
+        <ul>
+            <li>Download and use the app on devices you own</li>
+            <li>Access all features included in your plan</li>
+            <li>Sync data between your iOS devices (via iCloud)</li>
+        </ul>
+        
+        <h3>4.2 You May Not:</h3>
+        <ul>
+            <li>Copy, modify, or create derivative works from the app</li>
+            <li>Reverse engineer or decompile the code</li>
+            <li>Sell, rent, or sublicense the app</li>
+            <li>Use the app for illegal or unauthorized purposes</li>
+            <li>Violate Apple or App Store guidelines</li>
+        </ul>
+        
+        <h2>5. Privacy and Data</h2>
+        <p>Your privacy is fundamental. Please see our <a href="https://calatayudjaime.github.io/subsly-privacy/privacy-en.html" style="color: #FF3366;">Privacy Policy</a> to understand how we handle information.</p>
+        
+        <div class="highlight-box">
+            <p><strong>Key Summary:</strong></p>
+            <ul style="margin-top: 10px;">
+                <li>We don't collect personal data</li>
+                <li>Everything is stored locally on your device</li>
+                <li>No third-party servers or analytics</li>
+                <li>You have full control of your data</li>
+            </ul>
+        </div>
+        
+        <h2>6. Acceptable Use</h2>
+        <p>By using Subsly, you agree to:</p>
+        <ul>
+            <li>Provide accurate information in the app</li>
+            <li>Use the app only for legal and personal purposes</li>
+            <li>Not attempt to hack or compromise the app's security</li>
+            <li>Respect intellectual property rights</li>
+            <li>Comply with all applicable laws</li>
+        </ul>
+        
+        <div class="divider"></div>
+        
+        <h2>7. Intellectual Property</h2>
+        <p>Subsly, including its code, design, logos, and content, is owned by Jaime Calatayud and is protected by copyright and intellectual property laws.</p>
+        
+        <ul>
+            <li>The name "Subsly" is a trademark of the developer</li>
+            <li>Icons and designs are exclusive property</li>
+            <li>Source code is protected by copyright</li>
+        </ul>
+        
+        <h2>8. Limitation of Liability</h2>
+        <p>The application is provided "as is" and "as available". To the maximum extent permitted by law:</p>
+        
+        <ul>
+            <li>We don't guarantee the app will be error-free</li>
+            <li>We're not responsible for local data loss</li>
+            <li>We're not responsible for decisions made based on the app</li>
+            <li>Maximum liability is limited to the price paid for the subscription</li>
+        </ul>
+        
+        <div class="warning-box">
+            <p><strong>Note:</strong> Subsly is an organizational tool. It does not automatically cancel your actual subscriptions. You must manage cancellations directly with each service provider.</p>
+        </div>
+        
+        <h2>9. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless the developer from any claims, damages, obligations, losses, liabilities, costs or debt, and expenses arising from your use of the app or violation of these terms.</p>
+        
+        <h2>10. Modifications</h2>
+        
+        <h3>10.1 To the Terms</h3>
+        <p>We reserve the right to modify these terms at any time. Changes will be effective upon posting. Your continued use constitutes acceptance of the new terms.</p>
+        
+        <h3>10.2 To the Application</h3>
+        <p>We may update, modify, or discontinue any aspect of the app without prior notice.</p>
+        
+        <div class="divider"></div>
+        
+        <h2>11. Termination</h2>
+        <p>These terms will remain in effect until terminated by you or us.</p>
+        
+        <h3>11.1 By You</h3>
+        <ul>
+            <li>You can terminate these terms by deleting the app</li>
+            <li>You can cancel your subscription at any time</li>
+        </ul>
+        
+        <h3>11.2 By Us</h3>
+        <ul>
+            <li>We may terminate your access for violation of these terms</li>
+            <li>We may discontinue the app with 30 days' notice</li>
+        </ul>
+        
+        <h2>12. Governing Law</h2>
+        <p>These terms are governed by the laws of Spain and the European Union. Any disputes will be resolved in the courts of Valencia, Spain.</p>
+        
+        <h2>13. General Provisions</h2>
+        
+        <h3>13.1 Entire Agreement</h3>
+        <p>These terms constitute the entire agreement between you and the developer regarding Subsly.</p>
+        
+        <h3>13.2 Severability</h3>
+        <p>If any provision is deemed invalid, the remaining provisions will continue in full force.</p>
+        
+        <h3>13.3 Waiver</h3>
+        <p>No waiver will be effective unless in writing and signed.</p>
+        
+        <h2>14. Apple Requirements</h2>
+        <p>These additional terms apply due to distribution through the App Store:</p>
+        
+        <ul>
+            <li>Apple is not a party to these terms</li>
+            <li>Apple has no obligation to provide support</li>
+            <li>Claims must be directed to the developer, not Apple</li>
+            <li>Apple is a third-party beneficiary of these terms</li>
+        </ul>
+        
+        <h2>15. Support and Contact</h2>
+        
+        <div class="contact-card">
+            <h3>📬 Need help?</h3>
+            <p>We're here to help you</p>
+            <p>📧 <a href="mailto:calatayudjaime@gmail.com">calatayudjaime@gmail.com</a></p>
+            <p>🌐 <a href="https://calatayudjaime.github.io/subsly-privacy/privacy-en.html">Privacy Policy</a></p>
+            <p>📍 Valencia, Spain</p>
+        </div>
         
         <div class="footer">
             <div class="footer-logo">SUBSLY</div>
