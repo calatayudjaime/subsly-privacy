@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Subsly</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF3366, #FF6B9D, #00D4FF, #00F5A0, #D946EF);
+            background-size: 200% 200%;
+            animation: gradientShift 10s ease infinite;
+            padding: 80px 20px 40px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .logo-text {
+            font-size: 48px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.95);
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+        }
+        
+        .metadata-card {
+            background: linear-gradient(135deg, #f8f9ff, #fff5f8);
+            border: 2px solid rgba(255,51,102,0.1);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .metadata-card strong {
+            color: #FF3366;
+        }
+        
+        .key-summary {
+            background: linear-gradient(135deg, #FF3366, #D946EF);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(255,51,102,0.2);
+        }
+        
+        .key-summary::before {
+            content: "🔒";
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 60px;
+            opacity: 0.3;
+        }
+        
+        .key-summary h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .key-summary p {
+            color: rgba(255,255,255,0.95);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin: 40px 0 30px;
+            background: linear-gradient(90deg, #FF3366, #00F5A0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            color: #1a1a1a;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #FF3366, #00F5A0);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 25px 0 15px;
+            color: #00B4D8;
+        }
+        
+        p {
+            margin-bottom: 18px;
+            color: #4a4a4a;
+            font-size: 16px;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        ul li {
+            margin: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            color: #4a4a4a;
+            font-size: 16px;
+        }
+        
+        ul li::before {
+            content: "→";
+            position: absolute;
+            left: 10px;
+            color: #00F5A0;
+            font-weight: bold;
+        }
+        
+        ul li strong {
+            color: #FF3366;
+        }
+        
+        .highlight-box {
+            background: #f8f9ff;
+            border-left: 4px solid #00F5A0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-box strong {
+            color: #FF3366;
+            font-size: 18px;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, rgba(217,70,239,0.1), rgba(0,212,255,0.1));
+            border: 2px solid rgba(217,70,239,0.2);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .contact-card h3 {
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .contact-card p {
+            color: #4a4a4a;
+            margin: 10px 0;
+        }
+        
+        .contact-card a {
+            color: #FF3366;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card a:hover {
+            color: #D946EF;
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #f8f9ff, #fff5f8);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 60px 0 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .footer-logo {
+            font-size: 32px;
+            font-weight: 900;
+            background: linear-gradient(90deg, #FF3366, #00F5A0, #D946EF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+        
+        .footer-tagline {
+            font-size: 18px;
+            color: #6a6a6a;
+            margin-bottom: 10px;
+        }
+        
+        .footer-copyright {
+            font-size: 14px;
+            color: #9a9a9a;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 5px;
+        }
+        
+        .badge-pink {
+            background: rgba(255,51,102,0.1);
+            color: #FF3366;
+            border: 1px solid #FF3366;
+        }
+        
+        .badge-green {
+            background: rgba(0,245,160,0.1);
+            color: #00C896;
+            border: 1px solid #00F5A0;
+        }
+        
+        .badge-blue {
+            background: rgba(0,212,255,0.1);
+            color: #00B4D8;
+            border: 1px solid #00D4FF;
+        }
+        
+        .emoji-large {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-text {
+                font-size: 36px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #FF3366, #00F5A0, transparent);
+            margin: 40px 0;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-text">SUBSLY</div>
+        <div class="subtitle">Your Subscription Manager</div>
+    </div>
+    
+    <div class="container fade-in">
+        <h1>Privacy Policy</h1>
+        
+        <div class="metadata-card">
+            <p><strong>Last Updated:</strong> September 12, 2025</p>
+            <p><strong>Version:</strong> 1.0</p>
+            <p><strong>Application:</strong> Subsly - Smart Subscription Management</p>
+            <div style="margin-top: 15px;">
+                <span class="badge badge-pink">100% Offline</span>
+                <span class="badge badge-green">No Tracking</span>
+                <span class="badge badge-blue">AES-256 Encryption</span>
+            </div>
+        </div>
+        
+        <div class="key-summary">
+            <h3>💡 Key Takeaway</h3>
+            <p>Subsly works completely offline. Your data NEVER leaves your device. We don't collect, store, or share any personal information. Your privacy is our absolute priority.</p>
+        </div>
+        
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy describes how Subsly ("the App", "we", "us") handles information when you use our subscription management application. Subsly is designed with complete privacy in mind: it works entirely offline and all your data remains exclusively on your device.</p>
+        
+        <p>By using Subsly, you agree to the practices described in this policy. If you disagree, we recommend not using the application.</p>
+        
+        <div class="divider"></div>
+        
+        <h2>2. Data Controller</h2>
+        <div class="highlight-box">
+            <p><strong>Controller:</strong> Jaime Calatayud</p>
+            <p><strong>Country:</strong> Spain</p>
+            <p><strong>Address:</strong> Ronda del Malecó 22, 46240 Carlet, Valencia, Spain</p>
+            <p><strong>Email:</strong> calatayudjaime@gmail.com</p>
+            <p><strong>Website:</strong> https://calatayudjaime.github.io/subsly-privacy</p>
+        </div>
+        
+        <h2>3. Your Data on Your Device</h2>
+        
+        <h3>3.1 Everything is Local</h3>
+        <p>Subsly processes the following types of information <strong>exclusively on your device</strong>:</p>
+        <ul>
+            <li><strong>Subscriptions:</strong> Names, amounts, renewal dates, and categories</li>
+            <li><strong>Private notes:</strong> Text and annotations protected with Face ID</li>
+            <li><strong>Images:</strong> Photos to customize categories</li>
+            <li><strong>Preferences:</strong> Settings and custom configurations</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <p><strong>⚠️ Important:</strong> None of this data is transmitted to external servers, cloud services, or third parties. Everything stays on your iPhone/iPad.</p>
+        </div>
+        
+        <h3>3.2 Zero Collection</h3>
+        <p>According to Apple's guidelines:</p>
+        <ul>
+            <li><span class="emoji-large">❌</span>We don't collect personal information</li>
+            <li><span class="emoji-large">❌</span>We don't use analytics</li>
+            <li><span class="emoji-large">❌</span>No advertising tracking</li>
+            <li><span class="emoji-large">❌</span>We don't create profiles</li>
+            <li><span class="emoji-large">❌</span>No account or login required</li>
+        </ul>
+        
+        <div class="divider"></div>
+        
+        <h2>4. System Permissions</h2>
+        
+        <h3>📸 Photo Access</h3>
+        <div class="highlight-box">
+            <p><strong>Purpose:</strong> Customize categories with your images</p>
+            <p><strong>How it works:</strong> Images are processed locally</p>
+            <p><strong>Control:</strong> Settings > Subsly > Photos</p>
+        </div>
+        
+        <h3>🔐 Face ID / Touch ID</h3>
+        <div class="highlight-box">
+            <p><strong>Purpose:</strong> Protect your private notes</p>
+            <p><strong>How it works:</strong> iOS manages biometric data</p>
+            <p><strong>Security:</strong> Your fingerprint never leaves the Secure Enclave</p>
+        </div>
+        
+        <h2>5. Maximum Security</h2>
+        <p>We implement multiple layers of protection:</p>
+        <ul>
+            <li><strong>AES-256 Encryption:</strong> Sensitive data encrypted at rest</li>
+            <li><strong>iOS Keychain:</strong> Secure key management</li>
+            <li><strong>Biometrics:</strong> Additional protection for notes</li>
+            <li><strong>iOS Sandbox:</strong> Total isolation from other apps</li>
+            <li><strong>No Internet:</strong> Zero remote attack vectors</li>
+        </ul>
+        
+        <div class="divider"></div>
+        
+        <h2>6. Complete Control of Your Data</h2>
+        
+        <h3>Retention</h3>
+        <p>Your data remains on your device as long as you have Subsly installed.</p>
+        
+        <h3>Deletion</h3>
+        <ul>
+            <li><strong>Selective:</strong> Delete individual items in the app</li>
+            <li><strong>Complete:</strong> Settings > "Delete All Data"</li>
+            <li><strong>Uninstall:</strong> iOS automatically deletes everything</li>
+        </ul>
+        
+        <h2>7. Legal Basis (GDPR)</h2>
+        <p>For EU users, processing is based on:</p>
+        <ul>
+            <li><strong>Performance:</strong> Providing requested functions</li>
+            <li><strong>Consent:</strong> For system permissions</li>
+        </ul>
+        
+        <h2>8. Your Rights</h2>
+        <p>Although data is local, we respect your rights:</p>
+        <ul>
+            <li><strong>Access:</strong> View all your data in the app</li>
+            <li><strong>Rectification:</strong> Edit whenever you want</li>
+            <li><strong>Erasure:</strong> Delete individually or completely</li>
+            <li><strong>Portability:</strong> Export (coming soon)</li>
+            <li><strong>Opposition:</strong> Disable permissions or uninstall</li>
+        </ul>
+        
+        <p>To exercise these rights, contact: calatayudjaime@gmail.com</p>
+        
+        <div class="divider"></div>
+        
+        <h2>9. No International Transfers</h2>
+        <p>There are no data transfers because all information remains exclusively on your device. No servers, no clouds, no third parties.</p>
+        
+        <h2>10. Children's Privacy</h2>
+        <p>Subsly is rated 4+ on the App Store. We don't collect information from minors. If you're a parent/guardian with concerns, please contact us.</p>
+        
+        <h2>11. Support</h2>
+        <p>If you contact us for support:</p>
+        <ul>
+            <li>We use your email only to respond</li>
+            <li>We delete conversations after 90 days</li>
+            <li>We don't share with third parties</li>
+            <li>You can request immediate deletion</li>
+        </ul>
+        
+        <h2>12. Updates</h2>
+        <p>Changes will be reflected in:</p>
+        <ul>
+            <li>The update date</li>
+            <li>In-app notification (major changes)</li>
+            <li>This permanent URL</li>
+        </ul>
+        
+        <h2>13. App Store Compliance</h2>
+        <p>We comply with:</p>
+        <ul>
+            <li>App Store Review Guidelines (5.1)</li>
+            <li>iOS App Privacy Requirements</li>
+            <li>Privacy Labels ("No Data Collected")</li>
+        </ul>
+        
+        <div class="contact-card">
+            <h3>📬 Contact</h3>
+            <p>Privacy questions?</p>
+            <p>📧 <a href="mailto:calatayudjaime@gmail.com">calatayudjaime@gmail.com</a></p>
+            <p>🌐 <a href="https://calatayudjaime.github.io/subsly-privacy">Privacy Policy</a></p>
+            <p>📍 Ronda del Malecó 22, 46240 Carlet, Valencia, Spain</p>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-logo">SUBSLY</div>
+            <div class="footer-tagline">100% Offline • 100% Private • 100% Yours</div>
+            <div class="footer-copyright">© 2025 Subsly App. All rights reserved.</div>
+        </div>
+    </div>
+</body>
+</html>
