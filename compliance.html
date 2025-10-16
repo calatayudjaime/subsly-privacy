@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Etiquetas y Marcado de Cumplimiento - Subsly</title>
+  <style>
+    /* === Estilos alineados con index.html / terms-es.html === */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7; color:#1a1a1a; background:#ffffff; overflow-x:hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #FF3366, #FF6B9D, #00D4FF, #00F5A0, #D946EF);
+      background-size:200% 200%; animation: gradientShift 10s ease infinite;
+      padding:80px 20px 40px; text-align:center; position:relative;
+      box-shadow:0 10px 40px rgba(0,0,0,0.1);
+    }
+    @keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .logo-text { font-size:48px; font-weight:900; color:#fff; letter-spacing:-2px; margin-bottom:10px; text-transform:uppercase; text-shadow:0 2px 10px rgba(0,0,0,0.2); }
+    .subtitle { font-size:18px; color:rgba(255,255,255,0.95); font-weight:500; }
+    .container { max-width:900px; margin:0 auto; padding:20px; background:#fff; }
+    .metadata-card {
+      background: linear-gradient(135deg, #f8f9ff, #fff5f8);
+      border:2px solid rgba(255,51,102,0.1); border-radius:20px; padding:25px; margin:30px 0;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    }
+    .metadata-card strong { color:#FF3366; }
+    .key-summary {
+      background: linear-gradient(135deg, #FF3366, #D946EF);
+      border-radius:20px; padding:30px; margin:30px 0; position:relative; overflow:hidden;
+      box-shadow:0 10px 30px rgba(255,51,102,0.2);
+    }
+    .key-summary::before { content:"✅"; position:absolute; right:20px; top:50%; transform:translateY(-50%); font-size:60px; opacity:.25; }
+    .key-summary h3 { color:#fff; margin-bottom:10px; font-size:20px; }
+    .key-summary p { color:rgba(255,255,255,0.95); font-size:16px; line-height:1.6; }
+    h1 {
+      font-size:36px; font-weight:800; margin:40px 0 30px;
+      background: linear-gradient(90deg, #FF3366, #00F5A0);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    h2 {
+      font-size:28px; font-weight:700; margin:40px 0 20px; color:#1a1a1a; position:relative; padding-left:20px;
+    }
+    h2::before {
+      content:""; position:absolute; left:0; top:50%; transform:translateY(-50%);
+      width:4px; height:100%; background: linear-gradient(180deg, #FF3366, #00F5A0); border-radius:2px;
+    }
+    h3 { font-size:20px; font-weight:600; margin:25px 0 15px; color:#00B4D8; }
+    p { margin-bottom:18px; color:#4a4a4a; font-size:16px; }
+    ul { margin:20px 0; padding-left:0; list-style:none; }
+    ul li { margin:12px 0; padding-left:35px; position:relative; color:#4a4a4a; font-size:16px; }
+    ul li::before { content:"→"; position:absolute; left:10px; color:#00F5A0; font-weight:bold; }
+    .contact-card, .card {
+      background: linear-gradient(135deg, rgba(217,70,239,0.1), rgba(0,212,255,0.1));
+      border:2px solid rgba(217,70,239,0.2);
+      border-radius:20px; padding:25px; margin:25px 0; box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    }
+    .card ul li::before { color:#00B4D8; }
+    .footer {
+      background: linear-gradient(135deg, #f8f9ff, #fff5f8);
+      border-radius:20px; padding:40px; margin:60px 0 30px; text-align:center;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    }
+    .footer-logo {
+      font-size:32px; font-weight:900;
+      background: linear-gradient(90deg, #FF3366, #00F5A0, #D946EF);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:15px;
+    }
+    .footer-tagline { font-size:18px; color:#6a6a6a; margin-bottom:10px; }
+    .footer-copyright { font-size:14px; color:#9a9a9a; }
+    .fade-in { animation: fadeIn .8s ease-in; }
+    @keyframes fadeIn { from{opacity:0; transform:translateY(20px)} to{opacity:1; transform:translateY(0)} }
+    .divider { height:2px; background:linear-gradient(90deg, transparent, #FF3366, #00F5A0, transparent); margin:40px 0; border-radius:2px; }
+    a { color:#FF3366; text-decoration:none; font-weight:600; } a:hover { color:#D946EF; text-decoration:underline; }
+    @media (max-width:768px){ .logo-text{font-size:36px} h1{font-size:28px} h2{font-size:22px} .container{padding:15px} }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-text">SUBSLY</div>
+    <div class="subtitle">Etiquetas y Marcado de Cumplimiento (UE)</div>
+  </div>
+
+  <div class="container fade-in">
+    <h1>Conformidad y Seguridad del Producto Digital</h1>
+
+    <div class="metadata-card">
+      <p><strong>Última actualización:</strong> 16 de octubre de 2025</p>
+      <p><strong>Aplicación:</strong> Subsly — Gestión Inteligente de Suscripciones</p>
+      <p><strong>Plataforma:</strong> iOS (App Store) • <strong>Clasificación por edad:</strong> 4+</p>
+    </div>
+
+    <div class="key-summary">
+      <h3>Resumen</h3>
+      <p>Subsly es una app 100% offline para organizar suscripciones. No recopila datos personales, no utiliza servidores ni terceros y almacena toda la información en el dispositivo del usuario.</p>
+    </div>
+
+    <h2>1. Identificación del Responsable</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Nombre legal:</strong> Jaime Calatayud</li>
+        <li><strong>Dirección:</strong> Ronda del Malecó 22, 46240 Carlet, Valencia, España</li>
+        <li><strong>Correo:</strong> <a href="mailto:calatayudjaime@gmail.com">calatayudjaime@gmail.com</a></li>
+        <li><strong>País:</strong> España (Unión Europea)</li>
+      </ul>
+    </div>
+
+    <h2>2. Información de Seguridad del Producto</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Tipo de producto:</strong> Software de consumo (aplicación móvil)</li>
+        <li><strong>Modelo de datos:</strong> 100% local en el dispositivo (sin transmisión a Internet)</li>
+        <li><strong>Riesgos conocidos:</strong> No se han identificado riesgos significativos. Requiere uso responsable (p. ej., no usar mientras conduces).</li>
+        <li><strong>Compatibilidad:</strong> iOS/iPadOS compatibles con la versión publicada.</li>
+      </ul>
+    </div>
+
+    <h2>3. Advertencias y Uso Seguro</h2>
+    <div class="card">
+      <ul>
+        <li>No utilices la aplicación mientras realices actividades que requieran atención total (conducción, etc.).</li>
+        <li>Mantén tu dispositivo actualizado y protegido con código/biometría.</li>
+        <li>Las copias de seguridad y la restauración dependen de la configuración del usuario (iCloud/backup del sistema).</li>
+      </ul>
+    </div>
+
+    <h2>4. Incidencias y Vulnerabilidades</h2>
+    <div class="card">
+      <p>Para reportar problemas de seguridad o riesgos del producto, escríbenos a <a href="mailto:calatayudjaime@gmail.com">calatayudjaime@gmail.com</a>. Nos comprometemos a responder en un máximo de <strong>72 horas laborables</strong> y, cuando proceda, a publicar una actualización correctiva y comunicarla en esta página.</p>
+    </div>
+
+    <h2>5. Cumplimiento Normativo</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Reglamento (UE) 2023/988</strong> — Reglamento General de Seguridad de los Productos (GPSR).</li>
+        <li><strong>Reglamento (UE) 2016/679</strong> — RGPD (protección de datos).</li>
+        <li><strong>Reglamento (UE) 2022/2065</strong> — Digital Services Act (DSA).</li>
+        <li><strong>App Store Review Guidelines</strong> y requisitos de privacidad de Apple.</li>
+      </ul>
+    </div>
+
+    <h2>6. Versionado y Trazabilidad</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Versión actual mostrada en App Store:</strong> 1.0</li>
+        <li><strong>Fecha de publicación:</strong> octubre 2025</li>
+        <li><strong>Historial de cambios (seguridad):</strong> se indicará en las notas de versión de App Store cuando aplique.</li>
+      </ul>
+    </div>
+
+    <h2>7. Enlaces Oficiales</h2>
+    <div class="card">
+      <ul>
+        <li>📄 <a href="./index.html">Política de Privacidad (ES)</a> · <a href="./privacy-en.html">Privacy Policy (EN)</a></li>
+        <li>⚖️ <a href="./terms-es.html">Términos de Uso (ES)</a> · <a href="./terms-en.html">Terms of Use (EN)</a></li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="footer">
+      <div class="footer-logo">SUBSLY</div>
+      <div class="footer-tagline">Cumplimiento UE • Seguridad del Producto • Privacidad por diseño</div>
+      <div class="footer-copyright">© 2025 Subsly App. Todos los derechos reservados.</div>
+    </div>
+  </div>
+</body>
+</html>
